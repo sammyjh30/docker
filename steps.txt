@@ -1,0 +1,8 @@
+//On Mac
+- Install Brew
+- Brew install docker
+- Brew install docker-machine
+- In Managed Software Centre install Oracle VM VirtualBox
+
+
+03 - https://stackoverflow.com/questions/35046165/how-do-i-switch-between-active-docker-machines-on-osx/35046166#35046166
