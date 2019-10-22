@@ -8,4 +8,4 @@
 03 - https://stackoverflow.com/questions/35046165/how-do-i-switch-between-active-docker-machines-on-osx/35046166#35046166
 04 - https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98
 if 04 doesn't connect to the daemon, open a new terminal, set up the environment variables and run again
-
+07 https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host/54145683
