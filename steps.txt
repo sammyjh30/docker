@@ -9,3 +9,16 @@
 04 - https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98
 if 04 doesn't connect to the daemon, open a new terminal, set up the environment variables and run again
 07 https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host/54145683
+08 https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpine-container
+
+09 - First  install the debian image via docker run -it debian. 
+https://stackoverflow.com/questions/29732990/installing-a-gcc-compiler-onto-a-docker-container/37130833#37130833
+https://www.cyberciti.biz/faq/debian-linux-install-gnu-gcc-compiler/
+To test :
+$ whereis gcc git
+$ gcc -v
+$ git --version
+
+10 - https://docs.docker.com/engine/reference/commandline/volume_create/
+check: docker volume ls
+
