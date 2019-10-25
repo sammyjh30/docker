@@ -25,4 +25,16 @@ $ git --version
 check: docker volume ls
 
 14 - https://www.ionos.com/community/server-cloud-infrastructure/docker/deploying-wordpress-in-docker-containers/
+bash into the container, run mysql with password, show tables
+
+docker exec -it spawning-pool bin/bash
+mysql -p
+Kerrigan
+show databases;
+
+
+19 -  Its syntax is as follows: [port we want on our machine]:[port we want to retrieve in the container]
+Yes, remember that all machines are sub systems and you can connect to them via their IP. But their services arent exposed. By linking the services to a port on the machine you are exposing the services thus able to use them via the ip of the machine and the port.
+
+
 
