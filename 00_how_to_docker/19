@@ -1,2 +1,17 @@
-docker run -d -p 1337:80 my-image-name
-docker run --name Abathur -p 3000:3000 --link spawning-pool:mysql -d wordpress
+docker run -it --name Abathur -v ~/:/root -p 3000:3000 -dit python:2-slim
+docker exec Abathur pip install Flask
+docker exec -it Abathur bin/bash
+
+apt-get update
+apt-get install vim
+vim app.py
+
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def hello_world():
+    return "<h1>Hello, World!</h1>"
+if __name__ == "__main__":
+    app.run(host=:'0.0.0.0', port=3000)
+
+docker exec -e FLASK_APP=/root/app.py Abathur python app.py --host=192.168.99.101 --port 3000
