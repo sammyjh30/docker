@@ -37,5 +37,17 @@ show databases;
 Yes, remember that all machines are sub systems and you can connect to them via their IP. But their services arent exposed. By linking the services to a port on the machine you are exposing the services thus able to use them via the ip of the machine and the port.
 Check Flask is installed: docker exec Abathur pip install Flask
 
+22 - https://docs.docker.com/engine/reference/commandline/swarm_join/
+To get token: https://docs.docker.com/engine/reference/commandline/swarm_join-token/
+ssh - https://www.callicoder.com/docker-machine-swarm-stack-golang-example/
+To check: docker node ls
 
+
+
+23 - https://docs.docker.com/engine/reference/commandline/network_create/
+to check : docker network ls
+
+24 - https://www.erlang-solutions.com/blog/scaling-rabbitmq-on-a-coreos-cluster-through-docker.html
+https://hub.docker.com/_/rabbitmq/
+To check - docker service ls
 
