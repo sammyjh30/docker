@@ -54,3 +54,8 @@ To check - docker service ls
 26 - https://docs.docker.com/engine/reference/commandline/service_create/
 https://hub.docker.com/r/42school/engineering-bay
 
+30 - https://docs.docker.com/engine/reference/commandline/service_scale/
+
+31 - https://stackoverflow.com/questions/49538037/how-to-remove-all-services-in-docker-swarm
+
+33 - https://tecadmin.net/remove-docker-images-and-containers/
