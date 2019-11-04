@@ -59,3 +59,13 @@ https://hub.docker.com/r/42school/engineering-bay
 31 - https://stackoverflow.com/questions/49538037/how-to-remove-all-services-in-docker-swarm
 
 33 - https://tecadmin.net/remove-docker-images-and-containers/
+
+
+
+
+01 - Dockerfiles
+
+ex00) https://takacsmark.com/dockerfile-tutorial-by-example-dockerfile-best-practices-2018/
+https://forums.docker.com/t/install-vim-in-docker-container-on-creation/60296
+
+https://github.com/VBrazhnik/docker-1/wiki/Dockerfiles

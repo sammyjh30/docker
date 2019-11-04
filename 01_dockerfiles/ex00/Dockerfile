@@ -1,5 +1,8 @@
-FROM alpine
-RUN apt-get update \
-    && apt-get install -y \
-        nmap \
-        vim
+FROM alpine:3.4
+
+RUN apk update && \
+    apk add curl && \
+    apk add vim
+
+#BUILD: docker build ./ -t ex00
+#RUN: docker run -it ex00
