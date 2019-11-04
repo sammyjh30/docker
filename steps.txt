@@ -69,3 +69,7 @@ ex00) https://takacsmark.com/dockerfile-tutorial-by-example-dockerfile-best-prac
 https://forums.docker.com/t/install-vim-in-docker-container-on-creation/60296
 
 https://github.com/VBrazhnik/docker-1/wiki/Dockerfiles
+
+02 -ubuntu/debian image -> install teamspeak server
+
+https://terminal28.com/how-to-install-and-configure-teamspeak3-server-linux-debian-ubuntu/
