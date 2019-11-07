@@ -1,12 +1,13 @@
 # ONBUILD ADD . /app/src
 # ONBUILD RUN /usr/local/bin/python-build --dir /app/src
 
-ONBUILD FROM ruby:2.3
+FROM ruby:2.3
 
-ONBUILD RUN apt-get update && \
+RUN apt-get update && \
     apt-get install -y --no-install-recommends && \
-    mkdir /opt/
+    mkdir /opt/app
 
 ONBUILD WORKDIR /opt/app
+ONBUILD ADD . /opt/app
 
 # https://hub.docker.com/_/rails/
