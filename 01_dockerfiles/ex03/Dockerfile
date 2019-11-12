@@ -18,3 +18,5 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && \
 # docker run -it --shm-size=4g --restart=on-failure -p 8080:80 -p 8022:22 -p 8443:443 --privileged --name gls ex03
 
 # git clone http://192.168.99.101:8080/root/gitlab_test_sam.git
+
+# ssh -T -p 8080 -i ttester.pub git@192.168.99.101
