@@ -73,3 +73,11 @@ https://github.com/VBrazhnik/docker-1/wiki/Dockerfiles
 02 -ubuntu/debian image -> install teamspeak server
 
 https://terminal28.com/how-to-install-and-configure-teamspeak3-server-linux-debian-ubuntu/
+
+
+
+
+Change gitlab port above 123, gitlab shell, expose port
+configure ssh daemon and client to work on same port
+
+https://docs.gitlab.com/omnibus/docker/

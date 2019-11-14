@@ -6,8 +6,10 @@ RUN apt-get update && \
     apt-get install -y xterm curl openssh-server ca-certificates postfix
 RUN curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
 RUN apt-get install -y gitlab-ce
+RUN sed -i "s/external_url 'https://'${ip}'/g" /etc/gitlab/gitlab.rb
 RUN sed -i "s/# grafana\['enable'\] = true/grafana['enable'] = false/g" /etc/gitlab/gitlab.rb
 RUN sed -i "s/unicorn\['worker_timeout'\] = 60/unicorn\['worker_timeout'\] = 300/g" /etc/gitlab/gitlab.rb
+RUN sed -i "s/gitlab_rails\['gitlab_shell_ssh_port'\] = 8022/g" /etc/gitlab/gitlab.rb
 
 EXPOSE 22 80 443
 
@@ -20,3 +22,5 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && \
 # git clone http://192.168.99.101:8080/root/gitlab_test_sam.git
 
 # ssh -T -p 8080 -i ttester.pub git@192.168.99.101
+
+# https://github.com/g0dReVeN/WTC-docker-1/blob/master/01_dockerfiles/ex03/Dockerfile
