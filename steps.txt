@@ -8,6 +8,9 @@
 03 - https://stackoverflow.com/questions/35046165/how-do-i-switch-between-active-docker-machines-on-osx/35046166#35046166
 04 - https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98
 if 04 doesn't connect to the daemon, open a new terminal, set up the environment variables and run again
+
+06 - To test: docker inspect -f {{.HostConfig.RestartPolicy}} overlord
+
 07 https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host/54145683
 https://docs.docker.com/config/formatting/
 
@@ -20,6 +23,8 @@ To test :
 $ whereis gcc git
 $ gcc -v
 $ git --version
+
+C code: echo -e "#include <unistd.h>\nint main(void){\nwrite(1, \"Y\", 1);\nreturn 1;}" >> test3.c
 
 10 - https://docs.docker.com/engine/reference/commandline/volume_create/
 check: docker volume ls
