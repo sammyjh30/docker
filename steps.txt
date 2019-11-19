@@ -16,7 +16,7 @@ https://docs.docker.com/config/formatting/
 
 08 https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpine-container
 
-09 - First  install the debian image via docker run -it debian. 
+09 - First  install the debian image via:    docker run -it debian 
 https://stackoverflow.com/questions/29732990/installing-a-gcc-compiler-onto-a-docker-container/37130833#37130833
 https://www.cyberciti.biz/faq/debian-linux-install-gnu-gcc-compiler/
 To test :

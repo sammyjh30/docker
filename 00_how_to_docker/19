@@ -12,6 +12,6 @@ app = Flask(__name__)
 def hello_world():
     return "<h1>Hello, World!</h1>"
 if __name__ == "__main__":
-    app.run(host=:'0.0.0.0', port=3000)
+    app.run(host='0.0.0.0', port=3000)
 
 docker exec -e FLASK_APP=/root/app.py Abathur python app.py --host=192.168.99.101 --port 3000
